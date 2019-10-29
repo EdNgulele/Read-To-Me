@@ -2,7 +2,7 @@ package com.example.edblack.readtome
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
