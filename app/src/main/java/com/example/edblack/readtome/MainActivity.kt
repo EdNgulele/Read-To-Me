@@ -1,8 +1,8 @@
 package com.example.edblack.readtome
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -34,9 +34,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
 
-
-
-     public override fun onInit(status: Int) {
+    override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
 
             val result = textToSpeech!!.setLanguage(Locale.US)
@@ -57,7 +55,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private fun speakOut() {
         var text = edit_text!!.text.toString();
-        textToSpeech!!.speak(text, TextToSpeech.QUEUE_FLUSH, null,"")
+        textToSpeech!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
 
     }
 
